@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SentixSpectrum</title>
+<style>
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/image4.jpeg');
+    background-size: cover;
+    background-color: #f0f0f0;
+    font-size: medium;
+    font-style: italic;
+  }
+  #header {
+    background-color: rgb(42, 42, 242);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: oblique;
+  }
+  #info-box {
+    border: 2px solid rgb(0, 255, 26);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 75%;
+    background-color: rgb(253, 197, 197);
+    box-shadow: 0 0 10px rgb(0, 255, 26); /* Red glowing effect */
+  }
+  #buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button-container {
+    display: inline-block;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(252, 255, 188);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  #copyright {
+    position: absolute;
+    bottom: 15px;
+    left : 50%;
+    transform: translateX(-50%);
+    font-size: small;
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+<div id="header">
+  <h1>SentixSpectrum</h1>
+</div>
+<div id="info-box">
+    <ul>
+        <li>Sentiment analysis aims to determine a writer’s attitude towards a topic or the overall contextual polarity of a document. The attitude can be his judgment or assessment, his emotional state or the intended emotional communication.</li><br>
+        <li>In sentiment analysis, the main task is to identify opinion words, which is very important. Opinion words are dominant indicators of feelings, especially adjectives, adverbs, and verbs, for example: “I love this camera. It’s amazing!”</li><br>
+        <li>Opinion words are also known as polarity words, sentiment words, opinion lexicon, or opinion words, which can generally be divided into two types: positive words, for example, wonderful, elegant, astonishing; and negative words, eg horrible, disgusting, poor.</li>
+    </ul>
+</div>
+<div id="buttons">
+  <div class="button-container">
+    <a href="https://www.geeksforgeeks.org/what-is-sentiment-analysis/" class="button" target="_blank">Explore More</a>
+    <form method="POST" action="/analyze"></form>
+  </div>
+  
+  <div class="button-container">
+    <a href="/analyze" class="button">Try Yourself</a>
+  </div>
+  
+</div>
+<div id="copyright">
+  &copy; 2024 SentixSpectrum. All rights reserved.
+</div>
+</body>
+</html>
